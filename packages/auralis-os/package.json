@@ -1,0 +1,55 @@
+{
+	"name": "auralis-os",
+	"description": "a React component library written in TypeScript for building web-based operating systems, made by NanoKim.",
+	"version": "1.1.0",
+	"author": {
+		"name": "NanoKim",
+		"email": "kjyyy7341@gmail.com"
+	},
+	"type": "module",
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"scripts": {
+		"build": "vite build && vite-node scripts/generateTypeDeclaration"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NanoKim/auralis-os.git",
+		"directory": "packages/auralis-os"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"@auralis-os/core": "workspace:*",
+		"@auralis-os/velis": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.5",
+		"@types/react": "^18.3.27",
+		"@vitejs/plugin-react-swc": "^3.7.0",
+		"typescript": "^5.5.4",
+		"unplugin-dts": "1.0.0-beta.6",
+		"vite": "^7.3.1",
+		"vite-plugin-css-injected-by-js": "^3.5.1"
+	},
+	"peerDependencies": {
+		"react": "^18.3.1"
+	},
+	"files": [
+		"dist"
+	],
+	"sideEffects": [
+		"**/*.css"
+	],
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"keywords": [
+		"react",
+		"typescript",
+		"web-os",
+		"components",
+		"internet-os",
+		"auralis-desktop"
+	]
+}

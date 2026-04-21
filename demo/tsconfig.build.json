@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "auralis-os": ["packages/auralis-os/dist/main.d.ts"],
+      "@auralis-os/core": ["packages/core/dist/main.d.ts"],
+      "@auralis-os/velis": ["packages/velis/dist/main.d.ts"],
+      "@auralis-os/lab": ["packages/lab/dist/main.d.ts"],
+      "@auralis-os/*": ["packages/apps/*/dist/main.d.ts"]
+    }
+  }
+}

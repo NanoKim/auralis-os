@@ -1,0 +1,61 @@
+{
+	"name": "@auralis-os/demo",
+	"private": true,
+	"author": {
+		"name": "NanoKim",
+		"email": "kjyyy7341@gmail.com"
+	},
+	"type": "module",
+	"scripts": {
+		"start": "vite",
+		"prebuild": "pnpm run fetch",
+		"build": "tsc --project tsconfig.build.json && vite build",
+		"preview": "vite preview --port 8080",
+		"fetch": "vite-node scripts/fetchRepository"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NanoKim/auralis-os.git",
+		"directory": "demo"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^7.1.0",
+		"@fortawesome/free-solid-svg-icons": "^7.1.0",
+		"@fortawesome/react-fontawesome": "^3.1.1",
+		"auralis-os": "workspace:*",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-router-dom": "^6.23.1",
+		"react-svg": "^16.1.34",
+		"react-tabs": "^6.0.2",
+		"vite": "^7.3.1",
+		"vite-plugin-svgr": "^4.2.0"
+	},
+	"devDependencies": {
+    "@auralis-os/velis": "workspace:*",
+    "@auralis-os/lab": "workspace:*",
+		"@types/gh-pages": "^6.1.0",
+		"@types/node": "^20.14.6",
+		"@types/react": "^18.3.27",
+		"@types/react-dom": "^18.3.0",
+		"@types/react-syntax-highlighter": "^15.5.13",
+		"@vitejs/plugin-react-swc": "^3.7.0",
+		"gh-pages": "^6.3.0",
+		"stylelint": "^16.6.1",
+		"typescript": "^5.5.4",
+		"vite-node": "^2.1.2",
+		"vite-plugin-checker": "^0.7.1"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

@@ -1,7 +1,36 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+	"compilerOptions": {
+		"target": "ESNext",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"types": ["vite/client", "vite-plugin-svgr/client", "node"],
+		"allowUmdGlobalAccess": true,
+		"resolveJsonModule": true,
+		"baseUrl": "./",
+		"paths": {
+			"auralis-os": ["packages/auralis-os/dist/main", "packages/auralis-os/src/main"],
+			"@auralis-os/*": ["packages/*/dist/main", "packages/*/src/main", "packages/apps/*/dist/main", "packages/apps/*/src/main"],
+		},
+		"allowJs": true,
+		"checkJs": true,
+		"noEmit": true,
+		"noEmitOnError": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitOverride": false
+	},
+	"include": [
+		"packages/**/*",
+		"scripts/**/*",
+		"demo/**/*",
+	],
+	"exclude": [
+		"**/node_modules/**/*",
+		"**/dist/**/*",
+		"./.vscode",
+		"./.github",
+	],
 }

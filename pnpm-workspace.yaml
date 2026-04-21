@@ -1,0 +1,7 @@
+packages:
+  - packages/*
+  - packages/apps/*
+  - demo
+
+overrides:
+  velis: link:../../../AppData/Local/pnpm/global/5/node_modules/@auralis-os/velis

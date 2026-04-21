@@ -1,0 +1,29 @@
+import { defineConfig } from "vite";
+import { resolve } from "path";
+import dts from "vite-plugin-dts";
+
+export default defineConfig({
+	plugins: [
+		dts({
+			include: ["src"],
+			outDir: "dist",
+			rollupTypes: true,
+			strictOutput: true,
+		}),
+	],
+	build: {
+		lib: {
+			entry: resolve(__dirname, "src/main.ts"),
+			formats: ["es"],
+		},
+		rollupOptions: {
+			external: ["vite", "path", /vite-plugin-/g, /@vitejs\/plugin-/g, "rollup"],
+			output: {
+				assetFileNames: "assets/[name][extname]",
+				chunkFileNames: "chunks/[name]-[hash].js",
+				entryFileNames: "[name].js",
+			},
+		},
+		sourcemap: true,
+	},
+});

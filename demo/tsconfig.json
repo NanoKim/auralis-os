@@ -1,0 +1,16 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "../",
+		"paths": {
+			"auralis-os": ["packages/auralis-os/src/main"],
+			"@auralis-os/*": ["packages/*/src/main", "packages/apps/*/src/main"],
+		}
+	},
+	"include": [
+		"src",
+		"vite.config.ts",
+		"scripts",
+	],
+	"exclude": ["node_modules", "**/dist/**"]
+}
