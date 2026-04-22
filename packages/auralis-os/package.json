@@ -19,7 +19,6 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"@auralis-os/core": "workspace:*",
 		"@auralis-os/velis": "workspace:*"
 	},
 	"devDependencies": {

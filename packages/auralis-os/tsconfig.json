@@ -9,11 +9,10 @@
 		"noEmit": false,
 		"rootDir": "../",
 		"paths": {
-			"@auralis-os/core": ["packages/core/src/main"],
 			"@auralis-os/velis": ["packages/velis/src/main"],
 			"@auralis-os/*": ["packages/apps/*/src/main"]
 		}
 	},
-	"include": ["src", "../core/src", "../velis/src", "../apps/**/src", "vite.config.ts"],
+	"include": ["src", "../velis/src", "../apps/**/src", "vite.config.ts"],
 	"exclude": ["node_modules"]
 }

@@ -14,7 +14,6 @@
 		"stage": "pnpm vite-node scripts/stageSite.ts",
 		"predeploy": "rimraf dist && pnpm run stage",
 		"deploy": "pnpm vite-node scripts/publishSite.ts",
-		"pretest": "pnpm --filter @auralis-os/lab... run build",
 		"test": "pnpm -r --reporter=append-only test",
 		"clean": "rimraf \"./packages/*/dist\" \"./packages/apps/*/dist\" \"./demo/dist\" \"./dist\" --glob",
 		"demo:start": "pnpm --filter @auralis-os/demo run start",
@@ -42,7 +41,6 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.8",
-		"@auralis-os/lab": "workspace:*",
 		"@types/gh-pages": "^6.1.0",
 		"@types/node": "^20.19.30",
 		"@vitejs/plugin-react": "^4.7.0",
@@ -68,9 +66,7 @@
 	"pnpm": {
 		"overrides": {
 			"auralis-os": "workspace:*",
-			"@auralis-os/core": "workspace:*",
-      "@auralis-os/velis": "workspace:*",
-			"@auralis-os/lab": "workspace:*"
+      "@auralis-os/velis": "workspace:*"
 		}
 	}
 }

@@ -13,7 +13,6 @@ function generateAliases() {
 
 	const localPackages = [
 		{ name: "auralis-os", path: resolve(__dirname, "../packages/auralis-os/" + entryFile) },
-		{ name: "@auralis-os/core", path: resolve(__dirname, "../packages/core/" + entryFile) },
 		{ name: "@auralis-os/velis", path: resolve(__dirname, "../packages/velis/" + entryFile) },
 	];
 

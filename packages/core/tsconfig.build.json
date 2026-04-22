@@ -1,8 +1,0 @@
-{
-	"extends": "./tsconfig.json",
-	"compilerOptions": {
-		"paths": {
-			"@auralis-os/*": ["packages/*/dist/main"],
-		},
-	},
-}

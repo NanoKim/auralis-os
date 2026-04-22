@@ -8,9 +8,6 @@
 		"emitDeclarationOnly": true,
 		"noEmit": false,
 		"noImplicitOverride": true,
-		"paths": {
-			"@auralis-os/lab": ["./node_modules/@auralis-os/lab/src/main"]
-		}
 	},
 	"include": ["src", "vite.config.ts"],
 	"exclude": ["node_modules"]

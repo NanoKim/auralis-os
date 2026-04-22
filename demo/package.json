@@ -33,7 +33,6 @@
 	},
 	"devDependencies": {
     "@auralis-os/velis": "workspace:*",
-    "@auralis-os/lab": "workspace:*",
 		"@types/gh-pages": "^6.1.0",
 		"@types/node": "^20.14.6",
 		"@types/react": "^18.3.27",
